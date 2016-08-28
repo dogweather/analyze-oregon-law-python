@@ -14,8 +14,5 @@ def split_into_sentences(s):
     return map(ensure_ends_with_period, s.split(sep=". "))
 
 
-def ensure_ends_with_period(s):
-    if s.endswith("."):
-        return s
-    else:
-        return s + "."
+def ensure_ends_with_period(sentence):
+    return sentence + ("" if sentence.endswith(".") else ".")
