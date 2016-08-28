@@ -1,9 +1,4 @@
-def fix_whitespace(s):
-    return s.replace("\n", " ")
-
-
-def fix_hyphenation(s):
-    return s.replace("- ", "")
+from string_ops import *
 
 
 def test_fix_whitespace():
